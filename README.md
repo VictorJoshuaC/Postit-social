@@ -6,3 +6,5 @@ Postit is a social media app that lets users create and share posts containing t
 * * okay okay 
 <h1>seting up</h1> 
 <i>lord of the rigs</i>
+<i>lord of the rigs</i>
+<i>lord of the rigs</i>
