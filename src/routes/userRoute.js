@@ -3,12 +3,12 @@ const express = require('express');
 const router = express.Router();
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
-const User = require('./models/userModel');
+const User = require('../models/userModel');
 const {authenticateToken} = require("../middlewares/auth");
 
 
 // Route for creating a new user
-router.post('/users', async (req, res) => {
+router.post('/api/v1/users', async (req, res) => {
     const { name, email, password } = req.body;
   
     try {
@@ -60,13 +60,13 @@ router.post('/users', async (req, res) => {
       // Return user object
       res.status(201).json(user);
     } catch (err) {
-      res.status(500).json({ message: err.message });
+      res.status(500).json({ message: err.message});
     }
 });
 
 
 // Route for logging in
-router.post('/users/login', async (req, res) => {
+router.post('/api/v1/users/login', async (req, res) => {
     const { email, password } = req.body;
   
     try {

@@ -1,13 +1,13 @@
 const express = require('express');
 const router = express.Router();
-const Post = require('./models/postModel');
+const {Post} = require('../models/postModel');
 
 const {authenticateToken} = require("../middlewares/auth");
 
 
 
 // Route for creating a new post
-router.post('/posts', authenticateToken, async (req, res) => {
+router.post('/api/v1/posts', authenticateToken, async (req, res) => {
     const { title, content } = req.body;
   
     try {
@@ -29,7 +29,7 @@ router.post('/posts', authenticateToken, async (req, res) => {
   
   
   // Route for updating a post
-router.put('/posts/:postId', authenticateToken, async (req, res) => {
+router.put('/api/v1/posts/:postId', authenticateToken, async (req, res) => {
     const { title, content } = req.body;
     const { postId } = req.params;
   
@@ -62,7 +62,7 @@ router.put('/posts/:postId', authenticateToken, async (req, res) => {
 });
   
   // Route for deleting a post
-router.delete('/posts/:postId', authenticateToken, async (req, res) => {
+router.delete('/api/v1/posts/:postId', authenticateToken, async (req, res) => {
     const { postId } = req.params;
   
     try {
@@ -98,7 +98,7 @@ router.delete('/posts/:postId', authenticateToken, async (req, res) => {
   
 
   // Route for unliking a post
-router.put('/posts/unlike/:id', authenticateToken, async (req, res) => {
+router.put('/api/v1/posts/unlike/:id', authenticateToken, async (req, res) => {
     const postId = req.params.id;
   
     try {

@@ -6,7 +6,7 @@ const {authenticateToken} = require("../middlewares/auth");
 
 
 // Route for adding a comment to a post
-router.post('/posts/comment/:id', authenticateToken, async (req, res) => {
+router.post('api/v1/posts/comment/:id', authenticateToken, async (req, res) => {
     const postId = req.params.id;
     const userId = req.user.id;
     const { text } = req.body;
@@ -42,7 +42,7 @@ router.post('/posts/comment/:id', authenticateToken, async (req, res) => {
 });
   
 // Route for deleting a comment from a post
-router.delete('/posts/comment/:id/:commentId', authenticateToken, async (req, res) => {
+router.delete('api/v1/posts/comment/:id/:commentId', authenticateToken, async (req, res) => {
     const postId = req.params.id;
     const commentId = req.params.commentId;
 
