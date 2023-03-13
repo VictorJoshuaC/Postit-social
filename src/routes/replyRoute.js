@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const Comment = require('./models/commentModel');
-const Reply = require('./models/replyModel');
+const Comment = require('../models/commentModel');
+const Reply = require('../models/replyModel');
 const {authenticateToken} = require("../middlewares/auth");
 
 

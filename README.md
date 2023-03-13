@@ -5,7 +5,8 @@
 The API is built using Node.js with the Express framework, and it uses MongoDB for data storage. It also uses JSON Web Tokens (JWTs) for user authentication and authorization.</p>
 
 <h1>References <h1>
- hjbgjkfucjkb,kcy,tujh,kbgkyituxhjmk,gtuydjm,hfiyujklj 
+ postman_docs:  ""
+ database_modeling: ""
 
 ## directory structure ##
 <b> The directory style used this Web-APP is commonly known as the "Model-View-Controller" (MVC) directory structure. It's a software design pattern that separates an application into three interconnected components: the model (data), the view (user interface), and the controller (logic). The goal of this pattern is to separate concerns and improve the maintainability, scalability, and testability of an application.
@@ -21,10 +22,9 @@ The API is built using Node.js with the Express framework, and it uses MongoDB f
     <li>Navigate to the root directory of the project in your terminal.</li>
     <li>Run npm install to install all the required dependencies.</li>
     <li>Create a .env file in the root directory of the project, and add the following environment variables:</li>
-    PORT=<5000> <br>
-    MONGO_URI=<mongodb+srv://admin:Jxk5VzRrbzAoXXVi@cluster2.j2yrznc.mongodb.net/post-itsocial?retryWrites=true&w=majority><br>
-    JWT_SECRET=<mysecretkey>
-
+    PORT=/5000/ <br>
+    MONGO_URI=/mongodb+srv://admin:Jxk5VzRrbzAoXXVi@cluster2.j2yrznc.mongodb.net/post-itsocial?retryWrites=true&w=majority/<br>
+    JWT_SECRET=/mysecretkey/
    <li>Run npm start to start the API server.</li>
 
 </ol> 

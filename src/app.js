@@ -27,16 +27,20 @@ const commentRoute = require('./routes/commentRoute');
 const replyRoute = require('./routes/replyRoute');
 const usersRoute = require('./routes/userRoute')
 
-app.use('/users', usersRoute);
-app.use('/post', postRoute);
-app.use('/comment', commentRoute);
-app.use('/replies', replyRoute);
+app.use('/api/v1/users', usersRoute);
+app.use('/api/v1/post', postRoute);
+app.use('/api/v1/comment', commentRoute);
+app.use('/api/v1/reply', replyRoute);
 
 
 
 // Routes
 app.get('/', (req, res) => {
   res.send('Welcome to Post-it Media API!');
+});
+
+app.get('/api/v1/docs', (req, res) => {
+  res.redirect("jesus help me abeg nepa have finish me ")
 });
 
 
@@ -50,52 +54,3 @@ console.log(`Server started on port ${Port}`);
 
 
 
-
-
-
-
-// const express = require('express');
-// const mongoose = require('mongoose');
-// const bodyParser = require('body-parser');
-// const cors = require('cors');
-
-// // Create an instance of the Express application
-// const app = express();
-
-// // Set up middleware to parse incoming request bodies as JSON
-// app.use(bodyParser.json());
-
-// // Enable CORS for all routes
-// app.use(cors());
-
-// // Connect to the MongoDB database using Mongoose
-// mongoose.connect('mongodb://localhost/postit', {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-//   useFindAndModify: false,
-//   useCreateIndex: true
-// }).then(() => {
-//   console.log('Connected to MongoDB database');
-// }).catch((error) => {
-//   console.error('Error connecting to MongoDB database:', error);
-// });
-
-// // Define the routes for the Postit API
-// const usersRoutes = require('./routes/users');
-// const postsRoutes = require('./routes/posts');
-// const commentsRoutes = require('./routes/comments');
-
-// app.use('/users', usersRoutes);
-// app.use('/posts', postsRoutes);
-// app.use('/posts/:postId/comments', commentsRoutes);
-
-// // Start the Express application
-// const PORT = process.env.PORT || 3000;
-// app.listen(PORT, () => {
-//   console.log(`Server listening on port ${PORT}`);
-// });
-
-
-
-
-    
