@@ -19,8 +19,8 @@ Provide any troubleshooting information for common issues.
     <li>Navigate to the root directory of the project in your terminal.</li>
     <li>Run npm install to install all the required dependencies.</li>
     <li>Create a .env file in the root directory of the project, and add the following environment variables:</li>
-    PORT=<5000>
-    MONGO_URI=<mongodb+srv://admin:Jxk5VzRrbzAoXXVi@cluster2.j2yrznc.mongodb.net/post-itsocial?retryWrites=true&w=majority>
+    PORT=<5000> <br>
+    MONGO_URI=<mongodb+srv://admin:Jxk5VzRrbzAoXXVi@cluster2.j2yrznc.mongodb.net/post-itsocial?retryWrites=true&w=majority><br>
     JWT_SECRET=<mysecretkey>
 
    <li>Run npm start to start the API server.</li>
