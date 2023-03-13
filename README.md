@@ -4,11 +4,13 @@
 
 The API is built using Node.js with the Express framework, and it uses MongoDB for data storage. It also uses JSON Web Tokens (JWTs) for user authentication and authorization.</p>
 
-References
-List any references or external resources used in the project.
+<h1>References <h1>
+ hjbgjkfucjkb,kcy,tujh,kbgkyituxhjmk,gtuydjm,hfiyujklj 
 
-Troubleshooting
-Provide any troubleshooting information for common issues.
+## directory structure ##
+<b> The directory style used this Web-APP is commonly known as the "Model-View-Controller" (MVC) directory structure. It's a software design pattern that separates an application into three interconnected components: the model (data), the view (user interface), and the controller (logic). The goal of this pattern is to separate concerns and improve the maintainability, scalability, and testability of an application.
+</b>
+
 
 # Getting Started
  To get started with the Post-it API, you will need to have Node.js and MongoDB installed on your system.
@@ -114,12 +116,6 @@ Here are some common issues you may encounter while using this Post-it API, alon
 * Database errors: If you are encountering database errors, such as 404 Not Found, ensure that the requested resource exists in the database. You may also want to check that the database is properly configured and running.
 
 * Request validation errors: If you are receiving errors related to invalid request parameters or data, ensure that you are providing valid data in the correct format. You can refer to the API documentation for guidance on valid request parameters and data formats.
-
-
-
-
-
-The directory style shown in the example is commonly known as the "Model-View-Controller" (MVC) directory structure. It's a software design pattern that separates an application into three interconnected components: the model (data), the view (user interface), and the controller (logic). The goal of this pattern is to separate concerns and improve the maintainability, scalability, and testability of an application.
 
 
 
