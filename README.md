@@ -119,6 +119,8 @@ Here are some common issues you may encounter while using this Post-it API, alon
 
 
 
+The directory style shown in the example is commonly known as the "Model-View-Controller" (MVC) directory structure. It's a software design pattern that separates an application into three interconnected components: the model (data), the view (user interface), and the controller (logic). The goal of this pattern is to separate concerns and improve the maintainability, scalability, and testability of an application.
+
 
 
 
