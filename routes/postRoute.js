@@ -75,7 +75,7 @@ router.delete('/posts/:postId', authenticateToken, async (req, res) => {
       }
   
   
-  
+ Added authentication, user registration and post creation endpoints This commit adds authentication middleware and endpoints for user registration and post creation. It also includes helper functions for generating random avatars and authentication tokens, as well as routes for updating a user's profile and deleting a user's account. The endpoints are protected by JWT authentication and password hashing is used to secure user passwords.
   
       // Check if the post has already been liked by the user
       if (post.likes.some((like) => like.user.toString() === req.user.id)) {
